@@ -6,6 +6,6 @@ COPY . .
 
 RUN yarn
 
-CMD yarn start
+CMD yarn start-e2e
 
 EXPOSE 3000

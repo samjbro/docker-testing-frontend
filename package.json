@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --debug",
-    "start": "webpack-dev-server --history-api-fallback --progress --host 0.0.0.0 --port 3000 --inline --hot --config webpack.config.js"
+    "start": "webpack-dev-server --history-api-fallback --progress --host 0.0.0.0 --port 3000 --inline --hot --config webpack.config.js",
+    "start-e2e": "webpack-dev-server --history-api-fallback --progress --host 0.0.0.0 --port 3000 --public frontend --inline --hot --config webpack.config.js --quiet"
   },
   "dependencies": {
     "artemisa": "^1.0.2-alpha-04",

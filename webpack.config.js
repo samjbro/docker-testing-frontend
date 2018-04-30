@@ -31,7 +31,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'public'),
         proxy: {
             '/api': {
-                target: 'http://localhost:3001',
+                target: process.env.BACKEND_URL | 'http://localhost:3001',
                 pathRewrite: {'^/api': ''},
                 secure: false,
                 changeOrigin: true
